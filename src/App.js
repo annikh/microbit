@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import MicrobitConnect from './components/MicrobitConnect'
+import MicrobitConnection from './components/MicrobitConnection.js'
 import ReadInputFile from './ReadInputFile.js';
 
 class App extends Component {
@@ -9,8 +9,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <ReadInputFile />
+          <MicrobitConnection />
         </header>
-        <MicrobitConnect />
       </div>
     );
   }
