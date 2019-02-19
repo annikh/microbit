@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { hexlify, scriptify } from './ConvertionUtils';
+import { hexlify, scriptify } from './Utils/ConvertionUtils';
 
 const ReadInputFile = () => {
     let reader;
   
     const handleFileRead = (e) => {
       const content = reader.result;
-      console.log(content);
+      console.log(content)
       const hexContent = scriptify(content);
       console.log(hexContent);
     };
