@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hexlify, scriptify } from './ConvertionUtils';
 
 const ReadInputFile = () => {
     let reader;
@@ -6,6 +7,8 @@ const ReadInputFile = () => {
     const handleFileRead = (e) => {
       const content = reader.result;
       console.log(content);
+      const hexContent = scriptify(content);
+      console.log(hexContent);
     };
   
     const handleFileSelect = (file) => {
@@ -18,7 +21,7 @@ const ReadInputFile = () => {
       <input type ='file' 
             id='file' 
             className='input-file' 
-            accept='.txt' 
+            accept='.hex' 
             onChange={e => handleFileSelect(e.target.files[0])} 
       />
     </div>;
