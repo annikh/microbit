@@ -1,0 +1,3 @@
+[submodule "src/PythonEditor"]
+	path = src/PythonEditor
+	url = https://github.com/bbcmicrobit/PythonEditor.git
